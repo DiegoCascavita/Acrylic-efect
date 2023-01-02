@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Geneva, Tahoma, sans-serif;
+}
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    color: rgb(54, 43, 43);
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+h2,p{
+    color: rgb(54, 43, 43);
+    font-weight: 500;
+    opacity: 0.8;
+}
+h3{
+    color: rgb(54, 43, 43);
+    font-weight: 600;
+    opacity: 0.8rem;
+}
+.video{
+    position: absolute;
+    
+ }
+/* rgba(255,255,255,0.7) glass effect with the opacity of rgb*/
+.glass{
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient( 
+    to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    border-radius: 2rem;    
+    z-index: 2;
+    backdrop-filter: blur(2rem); /*blur effect*/
+    display: flex;
+}
+.diego{
+    border-radius: 50%;
+}
+.icons{
+    height: 30px;
+}
+
+.dashboard{
+    flex: 1; /* space available /2*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient( 
+    to right bottom, rgba(255,255,255,0.1), rgba(255,255,255,0.2));
+    border-radius: 2rem;
+    width: 5rem;
+}
+.link{
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center; 
+}
+.link h2{
+    padding: 0rem 2rem ;
+}
+.games{
+    flex: 2; 
+}
+.contact{
+    background: linear-gradient(to right top, #781cbe,#a698af);
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+}
+.contact h2{
+    font-weight: 600;
+}
+/* dashboard 2*/
+.status{
+    margin-bottom: 3rem;
+    background: linear-gradient( 
+    to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    border: none;
+    width: 80%;
+    height: 5%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    margin-top: 10px;
+}
+.games{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem ;
+}
+.card{
+    display: flex;
+    background: linear-gradient(
+    to left top, rgba(255,255,255,0.1), rgba(255,255,255,0.2 ));
+    border-radius: 1rem;
+    margin: 2rem 1.5rem ;
+    padding: 2rem ;
+    box-shadow: 6px 6px 20px rgba(122,122,122,1);/* shadows */
+    justify-content: space-between;
+}
+.progress{
+    background: rgb(236, 236, 236);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem 0rem;
+    position: relative;
+    overflow: hidden;
+}
+.progress::after{
+    content:  "";
+    width: 100%;
+    height: 100%;
+    background:  linear-gradient(to right top, #781cbe,#a698af);
+    position: absolute;
+    right: 30%;
+    border-radius: 1rem 0rem;
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.percentage{
+    font-weight: bold;
+    background:  linear-gradient(
+        to right top,  rgba(255,255,255,0.3), rgba(255,255,255,0.5 ));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
